@@ -11,4 +11,6 @@ For more information about the coder and his projects, you may visit his [websit
 
 _Do not judge me for this code, lest ye be judged for your own._
 
-Last Modified: 09. November 2022
+Last Modified: 24. November 2022
+
+HAPPY THANKSGIVING PEOPLE!! :)
