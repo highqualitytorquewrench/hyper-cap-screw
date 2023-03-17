@@ -15,6 +15,7 @@ PLATFORM_HEIGHT = 10
 BALL_RADIUS = 10
 GRAVITY = 1
 BOUNCINESS = 0.8
+PLATFORM_SPEED = 5
 
 # Set up the display
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -52,6 +53,13 @@ while True:
 
     # Apply gravity
     ball_speed[1] += GRAVITY
+
+    # Move the platform
+    keys = pygame.key.get_pressed()
+    if keys[K_LEFT] and platform.left > 0:
+        platform.move_ip(-PLATFORM_SPEED, 0)
+    if keys[K_RIGHT] and platform.right < SCREEN_WIDTH:
+        platform.move_ip(PLATFORM_SPEED, 0)
 
     # Check events
     for event in pygame.event.get():
